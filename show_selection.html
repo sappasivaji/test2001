@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Select Show | Movie Ticket Booking</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#ffffff;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+}
+
+/* ================= NAVBAR ================= */
+.navbar{
+    background:#1f252b;
+    color:white;
+    padding:14px 30px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.nav-left{
+    display:flex;
+    align-items:center;
+    gap:25px;
+}
+
+.brand{
+    font-size:20px;
+    font-weight:bold;
+}
+
+.nav-left a{
+    color:#cfd3d6;
+    text-decoration:none;
+    font-size:15px;
+}
+
+.nav-right{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.search-box{
+    display:flex;
+}
+
+.search-box input{
+    padding:7px 10px;
+    border:none;
+    outline:none;
+    width:220px;
+    border-radius:4px 0 0 4px;
+}
+
+.search-box button{
+    padding:7px 10px;
+    border:none;
+    background:#2c333a;
+    color:white;
+    border-radius:0 4px 4px 0;
+}
+
+.user{
+    color:#cfd3d6;
+    font-size:14px;
+}
+
+.user span{
+    background:#3b424a;
+    padding:3px 8px;
+    border-radius:12px;
+    font-size:12px;
+    margin-left:5px;
+}
+
+/* ================= MAIN ================= */
+.container{
+    flex:1;
+    padding:35px 30px;
+}
+
+.container h2{
+    margin-bottom:20px;
+    font-size:28px;
+}
+
+/* ================= TABLE ================= */
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+thead th{
+    text-align:left;
+    padding:12px;
+    border-bottom:2px solid #ddd;
+}
+
+tbody tr{
+    background:#f2f2f2;
+}
+
+tbody td{
+    padding:15px 12px;
+    border-bottom:1px solid #ddd;
+}
+
+.action-btn{
+    background:#0d6efd;
+    color:white;
+    padding:8px 14px;
+    border:none;
+    border-radius:4px;
+    cursor:pointer;
+}
+
+.action-btn:hover{
+    background:#084298;
+}
+
+/* ================= FOOTER ================= */
+footer{
+    background:#1f252b;
+    color:#cfd3d6;
+    text-align:center;
+    padding:18px;
+    font-size:14px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <div class="nav-left">
+        <div class="brand">Movie Ticket Booking</div>
+        <a href="#">Home</a>
+        <a href="#">Movies</a>
+        <a href="#">My Bookings</a>
+    </div>
+
+    <div class="nav-right">
+        <div class="search-box">
+            <input type="text" placeholder="Search movies...">
+            <button>🔍</button>
+        </div>
+        <div class="user">
+            Welcome, Shivaji Yadav <span>User</span>
+        </div>
+    </div>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="container">
+    <h2>Select Show for Movie</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Theatre</th>
+                <th>Screen</th>
+                <th>Start Time</th>
+                <th>End Time</th>
+                <th>Price</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>2025-11-02 11:00:00.0</td>
+                <td>2025-11-02 13:28:00.0</td>
+                <td>$11.99</td>
+                <td>
+                    <button class="action-btn">Select Seats</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- FOOTER -->
+<footer>
+    © 2025 YP Movie Ticket Booking. All rights reserved.
+</footer>
+
+</body>
+</html>

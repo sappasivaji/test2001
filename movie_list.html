@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Movies | Movie Ticket Booking</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#ffffff;
+}
+
+/* ================= NAVBAR ================= */
+.navbar{
+    background:#1f252b;
+    color:#fff;
+    padding:14px 30px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.nav-left{
+    display:flex;
+    align-items:center;
+    gap:25px;
+}
+
+.brand{
+    font-size:20px;
+    font-weight:bold;
+}
+
+.nav-left a{
+    color:#cfd3d6;
+    text-decoration:none;
+    font-size:15px;
+}
+
+.nav-right{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.search-box{
+    display:flex;
+}
+
+.search-box input{
+    padding:7px 10px;
+    border:none;
+    outline:none;
+    width:220px;
+    border-radius:4px 0 0 4px;
+}
+
+.search-box button{
+    padding:7px 10px;
+    border:none;
+    background:#2c333a;
+    color:white;
+    border-radius:0 4px 4px 0;
+    cursor:pointer;
+}
+
+.user{
+    color:#cfd3d6;
+    font-size:14px;
+}
+
+.user span{
+    background:#3b424a;
+    padding:3px 8px;
+    border-radius:12px;
+    font-size:12px;
+    margin-left:5px;
+}
+
+/* ================= PAGE ================= */
+.container{
+    padding:30px;
+}
+
+.container h2{
+    margin-bottom:20px;
+}
+
+/* ================= MOVIE GRID ================= */
+.movies{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:30px;
+}
+
+.movie-card{
+    border:1px solid #ddd;
+    border-radius:6px;
+    overflow:hidden;
+}
+
+.movie-card img{
+    width:100%;
+    height:420px;
+    object-fit:cover;
+}
+
+.movie-info{
+    padding:15px;
+}
+
+.movie-info h3{
+    margin-bottom:8px;
+}
+
+.movie-info p{
+    font-size:14px;
+    color:#666;
+    margin-bottom:8px;
+}
+
+.movie-info small{
+    color:#888;
+    display:block;
+    margin-bottom:12px;
+}
+
+.movie-info button{
+    background:#0d6efd;
+    border:none;
+    color:white;
+    padding:8px 16px;
+    border-radius:4px;
+    cursor:pointer;
+}
+
+.movie-info button:hover{
+    background:#084298;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <div class="nav-left">
+        <div class="brand">Movie Ticket Booking</div>
+        <a href="#">Home</a>
+        <a href="#">Movies</a>
+        <a href="#">My Bookings</a>
+    </div>
+
+    <div class="nav-right">
+        <div class="search-box">
+            <input type="text" placeholder="Search movies...">
+            <button>🔍</button>
+        </div>
+        <div class="user">
+            Welcome, Shivaji Yadav <span>User</span>
+        </div>
+    </div>
+</div>
+
+<!-- MOVIES SECTION -->
+<div class="container">
+    <h2>Movies</h2>
+
+    <div class="movies">
+
+        <!-- Movie 1 -->
+        <div class="movie-card">
+            <img src="https://m.media-amazon.com/images/I/51EbJjlLg6L._AC_.jpg">
+            <div class="movie-info">
+                <h3>The Dark Knight</h3>
+                <p>A superhero movie about Batman.</p>
+                <small>English | 152 mins</small>
+                <button>Book Tickets</button>
+            </div>
+        </div>
+
+        <!-- Movie 2 -->
+        <div class="movie-card">
+            <img src="https://m.media-amazon.com/images/I/91kFYg4fX3L._AC_SL1500_.jpg">
+            <div class="movie-info">
+                <h3>Inception</h3>
+                <p>A sci-fi thriller about dreams.</p>
+                <small>English | 148 mins</small>
+                <button>Book Tickets</button>
+            </div>
+        </div>
+
+        <!-- Movie 3 -->
+        <div class="movie-card">
+            <img src="https://m.media-amazon.com/images/I/81nC7F0S9XL._AC_SL1500_.jpg">
+            <div class="movie-info">
+                <h3>The Shawshank Redemption</h3>
+                <p>A drama about hope and friendship.</p>
+                <small>English | 142 mins</small>
+                <button>Book Tickets</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
+ 

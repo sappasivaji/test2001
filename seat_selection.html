@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Select Seats | Movie Ticket Booking</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+}
+
+/* =============== NAVBAR =============== */
+.navbar{
+    background:#1f252b;
+    color:white;
+    padding:14px 30px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.nav-left{
+    display:flex;
+    align-items:center;
+    gap:25px;
+}
+
+.brand{
+    font-size:20px;
+    font-weight:bold;
+}
+
+.nav-left a{
+    color:#cfd3d6;
+    text-decoration:none;
+    font-size:15px;
+}
+
+.nav-right{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.search-box{
+    display:flex;
+}
+
+.search-box input{
+    padding:7px 10px;
+    border:none;
+    outline:none;
+    width:220px;
+    border-radius:4px 0 0 4px;
+}
+
+.search-box button{
+    padding:7px 10px;
+    border:none;
+    background:#2c333a;
+    color:white;
+    border-radius:0 4px 4px 0;
+}
+
+.user{
+    color:#cfd3d6;
+    font-size:14px;
+}
+
+.user span{
+    background:#3b424a;
+    padding:3px 8px;
+    border-radius:12px;
+    font-size:12px;
+    margin-left:5px;
+}
+
+/* =============== MAIN CONTENT =============== */
+.container{
+    flex:1;
+    padding:40px 30px;
+}
+
+.container h2{
+    font-size:28px;
+    margin-bottom:25px;
+}
+
+/* =============== SCREEN BAR =============== */
+.screen{
+    width:80%;
+    margin:0 auto 25px;
+    background:#e0e0e0;
+    text-align:center;
+    padding:6px;
+    font-weight:bold;
+    letter-spacing:1px;
+}
+
+/* =============== SEATS =============== */
+.seats{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    margin-bottom:30px;
+}
+
+.seat{
+    width:42px;
+    height:42px;
+    border-radius:6px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:14px;
+    font-weight:bold;
+    color:white;
+}
+
+.seat.available{
+    background:#4caf50;
+}
+
+.seat.booked{
+    background:#f44336;
+}
+
+/* =============== BUTTON =============== */
+.book-btn{
+    background:#0d6efd;
+    color:white;
+    padding:10px 18px;
+    border:none;
+    border-radius:5px;
+    font-size:14px;
+    cursor:pointer;
+}
+
+.book-btn:hover{
+    background:#084298;
+}
+
+/* =============== FOOTER =============== */
+footer{
+    background:#1f252b;
+    color:#cfd3d6;
+    text-align:center;
+    padding:18px;
+    font-size:14px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <div class="nav-left">
+        <div class="brand">Movie Ticket Booking</div>
+        <a href="#">Home</a>
+        <a href="#">Movies</a>
+        <a href="#">My Bookings</a>
+    </div>
+
+    <div class="nav-right">
+        <div class="search-box">
+            <input type="text" placeholder="Search movies...">
+            <button>🔍</button>
+        </div>
+        <div class="user">
+            Welcome, Shivaji Yadav <span>User</span>
+        </div>
+    </div>
+</div>
+
+<!-- MAIN -->
+<div class="container">
+    <h2>Select Seats for Show</h2>
+
+    <div class="screen">SCREEN</div>
+
+    <div class="seats">
+        <div class="seat booked">A1</div>
+        <div class="seat available">A2</div>
+        <div class="seat available">A3</div>
+        <div class="seat available">A4</div>
+        <div class="seat available">A5</div>
+        <div class="seat available">B1</div>
+        <div class="seat available">B2</div>
+        <div class="seat available">B3</div>
+        <div class="seat available">B4</div>
+        <div class="seat available">B5</div>
+    </div>
+
+    <button class="book-btn">Book Selected Seats</button>
+</div>
+
+<!-- FOOTER -->
+<footer>
+    © 2025 YP Movie Ticket Booking. All rights reserved.
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Movie Ticket Booking</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#ffffff;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+}
+
+/* ================= NAVBAR ================= */
+.navbar{
+    background:#1f252b;
+    color:#fff;
+    padding:14px 30px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.nav-left{
+    display:flex;
+    align-items:center;
+    gap:25px;
+}
+
+.brand{
+    font-size:20px;
+    font-weight:bold;
+}
+
+.nav-left a{
+    color:#cfd3d6;
+    text-decoration:none;
+    font-size:15px;
+}
+
+.nav-left a:hover{
+    color:#fff;
+}
+
+.nav-right{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.search-box{
+    display:flex;
+    align-items:center;
+}
+
+.search-box input{
+    padding:7px 10px;
+    border:none;
+    outline:none;
+    width:220px;
+    border-radius:4px 0 0 4px;
+}
+
+.search-box button{
+    padding:7px 10px;
+    border:none;
+    background:#2c333a;
+    color:white;
+    cursor:pointer;
+    border-radius:0 4px 4px 0;
+}
+
+.user-info{
+    color:#cfd3d6;
+    font-size:14px;
+}
+
+.user-badge{
+    background:#3b424a;
+    padding:3px 8px;
+    border-radius:12px;
+    font-size:12px;
+    margin-left:5px;
+}
+
+/* ================= MAIN ================= */
+.main{
+    flex:1;
+    text-align:center;
+    padding:60px 30px;
+}
+
+.main h1{
+    font-size:36px;
+    margin-bottom:10px;
+}
+
+.main p{
+    color:#666;
+    margin-bottom:50px;
+}
+
+/* ================= CARDS ================= */
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+}
+
+.card{
+    width:300px;
+    border:1px solid #ddd;
+    border-radius:6px;
+    padding:25px;
+    text-align:left;
+}
+
+.card h3{
+    margin-bottom:10px;
+}
+
+.card p{
+    color:#666;
+    font-size:14px;
+    margin-bottom:20px;
+}
+
+.card button{
+    background:#0d6efd;
+    border:none;
+    color:white;
+    padding:8px 18px;
+    border-radius:4px;
+    cursor:pointer;
+}
+
+.card button:hover{
+    background:#084298;
+}
+
+/* ================= FOOTER ================= */
+footer{
+    background:#1f252b;
+    color:#cfd3d6;
+    text-align:center;
+    padding:18px;
+    font-size:14px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <div class="nav-left">
+        <div class="brand">Movie Ticket Booking</div>
+        <a href="#">Home</a>
+        <a href="#">Movies</a>
+        <a href="#">My Bookings</a>
+    </div>
+
+    <div class="nav-right">
+        <div class="search-box">
+            <input type="text" placeholder="Search movies...">
+            <button>🔍</button>
+        </div>
+        <div class="user-info">
+            Welcome, Shivaji Yadav
+            <span class="user-badge">User</span>
+        </div>
+    </div>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="main">
+    <h1>Welcome, Shivaji Yadav!</h1>
+    <p>Here are your personalized recommendations.</p>
+
+    <div class="cards">
+        <div class="card">
+            <h3>My Bookings</h3>
+            <p>View your booked tickets.</p>
+            <button>View</button>
+        </div>
+
+        <div class="card">
+            <h3>Profile</h3>
+            <p>Update your profile and bank details.</p>
+            <button>View</button>
+        </div>
+
+        <div class="card">
+            <h3>Browse Movies</h3>
+            <p>Explore our collection of movies.</p>
+            <button>Browse</button>
+        </div>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+    © 2025 YP Movie Ticket Booking. All rights reserved.
+</footer>
+
+</body>
+</html>

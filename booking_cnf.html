@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Booking Confirmation</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    background:#ffffff;
+}
+
+/* ================= NAVBAR ================= */
+.navbar{
+    background:#1f252b;
+    color:white;
+    padding:14px 30px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.nav-left{
+    display:flex;
+    align-items:center;
+    gap:25px;
+}
+
+.brand{
+    font-size:20px;
+    font-weight:bold;
+}
+
+.nav-left a{
+    color:#cfd3d6;
+    text-decoration:none;
+    font-size:15px;
+}
+
+.nav-right{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.search-box{
+    display:flex;
+}
+
+.search-box input{
+    padding:7px 10px;
+    border:none;
+    outline:none;
+    width:220px;
+    border-radius:4px 0 0 4px;
+}
+
+.search-box button{
+    padding:7px 10px;
+    border:none;
+    background:#2c333a;
+    color:white;
+    border-radius:0 4px 4px 0;
+}
+
+.user{
+    color:#cfd3d6;
+    font-size:14px;
+}
+
+.user span{
+    background:#3b424a;
+    padding:3px 8px;
+    border-radius:12px;
+    font-size:12px;
+    margin-left:5px;
+}
+
+/* ================= MAIN ================= */
+.main{
+    flex:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px 20px;
+}
+
+.card{
+    width:480px;
+    border:1px solid #e0e0e0;
+    border-radius:6px;
+    background:#ffffff;
+}
+
+.card-header{
+    padding:18px;
+    font-size:24px;
+    font-weight:bold;
+    border-bottom:1px solid #e0e0e0;
+    text-align:center;
+}
+
+.card-body{
+    padding:25px;
+    text-align:center;
+}
+
+.card-body h3{
+    margin-bottom:10px;
+}
+
+.card-body p{
+    margin:12px 0;
+    font-size:15px;
+    color:#333;
+}
+
+.download-btn{
+    margin-top:20px;
+    background:#198754;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    font-size:15px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.download-btn:hover{
+    background:#146c43;
+}
+
+/* ================= FOOTER ================= */
+footer{
+    background:#1f252b;
+    color:#cfd3d6;
+    text-align:center;
+    padding:18px;
+    font-size:14px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <div class="nav-left">
+        <div class="brand">Movie Ticket Booking</div>
+        <a href="#">Home</a>
+        <a href="#">Movies</a>
+        <a href="#">My Bookings</a>
+    </div>
+
+    <div class="nav-right">
+        <div class="search-box">
+            <input type="text" placeholder="Search movies...">
+            <button>🔍</button>
+        </div>
+        <div class="user">
+            Welcome, Shivaji Yadav <span>User</span>
+        </div>
+    </div>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="main">
+    <div class="card">
+        <div class="card-header">Booking Confirmation</div>
+        <div class="card-body">
+            <h3>Booking ID: 5</h3>
+            <p>Show ID: 2</p>
+            <p><strong>Total Amount:</strong> $11.99</p>
+            <p>Booking Time: 2025-11-25 19:38:58.0</p>
+            <button class="download-btn">Download Ticket</button>
+        </div>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+    © 2025 YP Movie Ticket Booking. All rights reserved.
+</footer>
+
+</body>
+</html>
